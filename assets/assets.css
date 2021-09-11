@@ -10,12 +10,6 @@
     padding: 0;
   }
   
-  body {
-    color: #39a6b2;
-    font-family: Helvetica, Arial, sans-serif;
-  }
-  
-  
   /* HEADER / NAV BAR STYLES START */
   
   header {
@@ -76,43 +70,6 @@
   /* HEADER / NAVBAR STYLES END */
   
   
-  
-  /* FOOTER STYLES START */
-  footer {
-    background: gainsboro;
-    color: var(--secondary-color);
-    margin: 50px auto;
-    padding: 30px 60px 30px 60px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  footer h2 {
-      flex: 1 20%;
-      font-size: 3vw;
-      border-right: 4px solid var(--secondary-color);
-  }
-
-  footer div {
-      flex: 2 80%;
-      display: flex;
-      flex-wrap: wrap;
-      font-size: 1.5vw;
-      justify-content: space-between;
-      padding: 0 60px 0 60px;
-      color: var(--secondary-color);
-
-  }
-  /* END FOOTER STYLES */
-  
-  /* STYLE ALL SECTION TAGS */
-  section {
-    padding: 60px;
-  }
-  
   /* HERO STYLES START */
   .hero {
     background-image: url('../assets/images/technology-background.jpg');
@@ -126,15 +83,6 @@
     text-align: right;
   }
   
-  .flex-item-bottom {
-    align-self: flex-end;
-  }
-  .flex-center {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-  }
 
   .hero h2 {
     font-size: 40px;
@@ -144,41 +92,133 @@
   
   /* HERO STYLES END */
   
-  
+/* Style the body */
+  body {
+    color: var(--secondary-color);
+    background-color: gainsboro;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+    /* STYLE ALL SECTION TAGS */
+
+    section {
+        padding: 60px;
+    }
+
   /* SECTION TITLE STYLES START */
   .section-title {
-    font-size: 48px;
-    border-bottom: 3px solid;
-    padding-bottom: 20px;
-    text-align: center;
-    margin: 0 auto 35px auto;
-    width: 50%;
+    font-size: 3vw;
+    padding-right: 40px;
+    border-right: 4px solid var(--secondary-color);
   }
   /* SECTION TITLE STYLES END */
   
   /* About Me Styles */
   
   .intro{
-    color: var(--secondary-color);
+    margin: 50px auto;
+    padding: 30px 60px 30px 60px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    line-height: 1.7;
-    width: 80%;
-    margin: 0 auto;
-    font-size: 20px;
-    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
   }
 
   .intro h2{
-      padding: 0 60px 0 0;
+    font-size: 3vw;
+    padding-right: 40px;
+    border-right: 4px solid var(--secondary-color);
   }
 
   .intro p{
-
+    flex: 2 80%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5vw;
+    justify-content: space-between;
+    padding: 0 60px 0 60px;
   }
   /* About me styles end */
   
+    /* work beginning */
+.projects {
+    margin: 50px auto;
+    padding: 30px 60px 30px 60px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: 2 80%;
+}
+
+.projects h2 {
+    flex: 1 20%;
+}
+
+.project {
+    border: 4px solid var(--tertiary-color);
+
+}
+
+.project h3 {
+    font-size: 2vw;
+}
+
+.project p {
+    font-size: 1.5;
+}
+
+.project img {
+width: 100%;
+height: auto;
+}
+
+.container {
+    position: relative;
+  }
+
+  .text {
+    position: absolute;
+    bottom: 20px;
+    background-color:var(--tertiary-color);
+    padding-left: 20px;
+    padding-right: 20px;
+  } 
+
+
+
+
+    /* work end */
   
+    /* FOOTER STYLES START */
+    footer {
+        color: var(--secondary-color);
+        padding: 30px 60px 30px 120px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+      }
+    
+      footer h2 {
+          flex: 1 20%;
+          text-align: left;
+          font-size: 3vw;
+          border-right: 4px solid var(--secondary-color);
+      }
+    
+      footer div {
+          flex: 2 80%;
+          display: flex;
+          flex-wrap: wrap;
+          font-size: 1.5vw;
+          justify-content: space-between;
+          padding: 0 60px 0 60px;
+          color: var(--secondary-color);
+    
+      }
+      /* END FOOTER STYLES */
   
 
   /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
