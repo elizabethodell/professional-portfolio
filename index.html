@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/assets.css">
-    <title>Professional Portfolio</title>
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/assets.css">
+        <title>Professional Portfolio</title>
+    </head>
 
     <!-- header with title and interactive navigation bar begin-->
     <header>
@@ -15,21 +15,25 @@
 
         <nav>
           <ul>
+            <!--About Me section in nav bar-->
             <li>
               <a href="#about-me">About Me</a>
             </li>
+            <!--work section in nav bar-->
             <li>
               <a href="#work">Work</a>
             </li>
+            <!--contact section in nav bar-->
             <li>
               <a href="#contact-me">Contact me</a>
             </li>
+            <!--resume section in nav bar-->
             <li>
               <a href="#resume">Resume</a>
             </li>
           </ul>
         </nav>
-      </header>
+    </header>
       <!-- end header and navigation -->
 
        <!-- hero beginning -->
@@ -37,97 +41,107 @@
         <div>
           <h2>Cool Subtitle Here</h2>
         </div>
-        <!--end of hero-->
     </section>
+    <!--end of hero-->
 
-<body>
+    <!--beginning of body section - includes about me and work-->
+    <body>
+        <!-- "about-me" beginning -->
+        <section>
+            <section id="about-me" class="intro">
+                <h2 class="section-title">
+                    About Me
+                </h2>
+                <div>
+                    <p>
+                        My name is Elizabeth Odell and I will complete the University of Richmond's coding boot camp February 2022. I graduated from Virginia Tech in December 2019 with a BS in Building Construction. I have experience working with a general contractor as a project engineer. My attention to detail and ability to learn quickly on the job are just a few of the useful skills that have carried over from my construction background to coding. Please take a look at my work below and feel free to contact me with any questions. 
+                    </p>
+                </div>
+            </section>
+        <!-- end of "about-me" -->
 
-<section>
-         <!-- "about-me" beginning -->
-    <section id="about-me" class="intro">
-          <h2 class="section-title">
-              About Me
-          </h2>
-          <div>
-            <p>
-                My name is Elizabeth Odell and I will complete the University of Richmond's coding boot camp February 2022. I graduated from Virginia Tech in December 2019 with a BS in Building Construction. I have experience working with a general contractor as a project engineer. My attention to detail and ability to learn quickly on the job are just a few of the useful skills that have carried over from my construction background to coding. Please take a look at my work below and feel free to contact me with any questions. 
-            </p>
-        </div>
-      </section>
- <!-- end of "about-me" -->
+        <!-- "work" beginning -->
+            <section class="flex-container">
+                <section id="work" class="projects">
+                    <h2 class="section-title">
+                        Work
+                    </h2>
+                </section>
 
- <!-- "work" beginning -->
- <section class="flex-container">
-    <section id="work" class="projects">
-        <h2 class="section-title">
-            Work
-        </h2>
-    </section>
+                <section class="containers">
+                <!--1st project-->
+                    <article class="container container1">
+                        <a href="https://github.com/elizabethodell">
+                            <img src="assets/images/surf.jpg" >
+                            <div class=text>
+                                <h3>Surf Report</h3>
+                                <p>Mern Stack</p>
+                            </div>
+                        </a> 
+                    </article>
 
-<section class="containers">
-    <!--1st project-->
-    <article class="container container1"> 
-        <img src="assets/images/surf.jpg" >
-        <div class=text>
-        <h3>Surf Report</h3>
-        <p>Mern Stack</p>
-    </div>
-    </article>
-
-    <!--2nd project-->
-    <article class="container container2"> 
-        <img src="assets/images/led.jpg" >
-        <div class=text>
-        <h3>LED Wall</h3>
-        <p>Node/IoT</p>
-        </div>
-    </article>
+                <!--2nd project-->
+                    <article class="container container2"> 
+                        <a href="https://github.com/elizabethodell">
+                            <img src="assets/images/led.jpg" >
+                            <div class=text>
+                                <h3>LED Wall</h3>
+                                <p>Node/IoT</p>
+                            </div>
+                        </a>
+                    </article>
 
 
-    <!--3rd project-->
-    <article class="container container3"> 
-        <img src="assets/images/Computer-screen.jpg" >
-        <div class=text>
-        <h3>Calculator</h3>
-        <p>React/JavaScript/CSS</p>
-    </div>
-    </article>
+                <!--3rd project-->
+                    <article class="container container3"> 
+                        <a href="https://github.com/elizabethodell">
+                            <img src="assets/images/Computer-screen.jpg" >
+                            <div class=text>
+                                <h3>Calculator</h3>
+                                <p>React/JavaScript/CSS</p>
+                            </div>
+                        </a>
+                    </article>
 
-    <!--4th project-->
-    <article class="container container4"> 
-        <img src="assets/images/puzzle.jpg" >
-        <div class=text>
-        <h3>Pastel Puzzels</h3>
-        <p>MERN Stack</p>
-    </div>
-    </article>
+                <!--4th project-->
+                    <article class="container container4"> 
+                        <a href="https://github.com/elizabethodell">
+                            <img src="assets/images/puzzle.jpg" >
+                            <div class=text>
+                                <h3>Pastel Puzzels</h3>
+                                <p>MERN Stack</p>
+                            </div>
+                        </a>
+                    </article>
 
-    <!--5th project-->
-        <article class="container container5"> 
-            <img src="assets/images/hero-bg.jpg" >
-            <div class=text>
-            <h3>Run Buddy</h3>
-            <p>HTML/CSS</p>
-        </div>
-        </article>
-    </section>
-</section>
- <!-- end of "work" -->
+                <!--5th project-->
+                    <article class="container container5"> 
+                        <a href="https://github.com/elizabethodell/run-buddy.git">
+                            <img src="assets/images/hero-bg.jpg" >
+                            <div class=text>
+                                <h3>Run Buddy</h3>
+                                <p>HTML/CSS</p>
+                            </div>
+                        </a>
+                    </article>
+                </section>
+            </section>
+            <!-- end of "work" -->
+        </section>
+        <!-- end of body with about me and work -->
 
-</section>
-
-       <!-- footer begin -->
-    <footer>
-        <h2 class="section-title">
-            Contact Me
-        </h2>
-        <div>
-            <a href="tel:123-456-7890">123-456-7890</a>
-            <a href="mailto:ebo16@vt.edu">ebo16@vt.edu</a>
-            <a href="https://github.com/elizabethodell">GitHub</a>
-            <a href="">Resume</a>
-        </div>
-      </footer>
-      <!-- footer end -->
+            <!-- footer begin -->
+        <footer id="contact-me">
+            <h2 class="section-title">
+                Contact Me
+            </h2>
+            <div>
+                <a href="tel:123-456-7890">123-456-7890</a>
+                <a href="mailto:ebo16@vt.edu">ebo16@vt.edu</a>
+                <a href="https://github.com/elizabethodell">GitHub</a>
+                <a href="">Resume</a>
+            </div>
+        </footer>
+    <!-- footer end -->
     </body>
-  </html>
+</html>
