@@ -82,6 +82,7 @@
     background-attachment: fixed;
     background-position: 80%;
     text-align: right;
+    height: 200px;
   }
   
 
@@ -105,10 +106,6 @@
 
 
     /* STYLE ALL SECTION TAGS */
-
-    section {
-        padding: 30px 15px;
-    }
 
 
   /* SECTION TITLE STYLES START */
@@ -273,10 +270,7 @@
 
   /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
   @media screen and (max-width: 980px) {
-    section {
-        padding: 30px 15px;
-      }
-    
+
   
   .containers {
     max-width: 80%;
@@ -296,9 +290,6 @@
   
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
   @media screen and (max-width: 768px) {
-    section {
-      padding: 30px 15px;
-    }
   }
   
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
