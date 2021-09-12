@@ -19,7 +19,6 @@
     justify-content: space-between;
     flex-wrap: wrap;
     position: sticky;
-    position: -webkit-sticky;
     top: 0;
     background-size: cover;
     background-attachment: fixed;
@@ -85,7 +84,7 @@
   
 
   .hero h2 {
-    font-size: 40px;
+    font-size: 5vw;
     color: var(--secondary-color);
     background-color: var(--tertiary-color);
   }
@@ -102,7 +101,7 @@
     /* STYLE ALL SECTION TAGS */
 
     section {
-        padding: 60px;
+        padding: 30px 15px;
     }
 
   /* SECTION TITLE STYLES START */
@@ -120,13 +119,11 @@
     padding: 30px 60px 30px 60px;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
   }
 
   .intro h2{
     font-size: 3vw;
-    padding-right: 40px;
+    text-align: center;
     border-right: 4px solid var(--secondary-color);
   }
 
@@ -143,38 +140,75 @@
     /* work beginning */
 .projects {
     margin: 50px auto;
-    padding: 30px 60px 30px 60px;
-    width: 100%;
+    padding: 30px 0px 30px 60px;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex: 2 80%;
 }
 
 .projects h2 {
-    flex: 1 20%;
+    font-size: 3vw;
+    text-align: center;
+    border-right: 4px solid var(--secondary-color);
 }
 
-.project {
-    border: 4px solid var(--tertiary-color);
-
+.flex-container {
+    display: flex;
 }
 
-.project h3 {
+.containers h3 {
     font-size: 2vw;
 }
 
-.project p {
-    font-size: 1.5;
+.containers p {
+    font-size: 1.5vw;
 }
 
-.project img {
-width: 100%;
-height: auto;
+.container img {
+    width:  100%;
+    height: 150px;
+    border: 1mm solid var(--tertiary-color);
+
 }
 
+.containers {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    
+  }
 .container {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    
+  }
+
+.container:hover {
+    background: var(--tertiary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    opacity: .5;
+  }
+
+  .container1 {
+    flex: 1 100%;
+  }
+
+  .container2 {
+    flex: 2 50%;
+  }
+
+  .container3{
+    flex: 3 50%;
+  }
+
+  .container4 {
+    flex: 2 50%;
+  }
+
+  .container5{
+    flex: 3 50%;
   }
 
   .text {
@@ -186,16 +220,15 @@ height: auto;
   } 
 
 
-
-
     /* work end */
   
     /* FOOTER STYLES START */
     footer {
-        color: var(--secondary-color);
-        padding: 30px 60px 30px 120px;
+        margin: 50px auto;
+        padding: 30px 60px 30px 60px;
         width: 100%;
         display: flex;
+        color: var(--secondary-color);
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
@@ -223,51 +256,26 @@ height: auto;
 
   /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
   @media screen and (max-width: 980px) {
-    header {
-      padding-bottom: 0;
-      justify-content: center;
-      position: relative;
-    }
-  
-    header h1 {
-      width: 100%;
-      text-align: center;
-    }
-  
-    header nav ul {
-      margin-top: 20px;
-      width: 100%;
-      justify-content: center;
-    }
-  
-    header nav ul li a {
-      font-size: 20px;
-    }
-  
-    footer h2, footer div {
-      text-align: center;
-      width: 100%;
-    }
-  
-    .hero-cta, .hero-form {
-      width: 100%;
-    }
+    section {
+        padding: 30px 15px;
+      }
     
-    .hero-cta {
-      text-align: center;
+  
+  .containers {
+max-width: 80%;
+  }
+
+  .container1 img{
+      max-width: 100%;
+  }
+
+
+    footer {
+      padding: 0px 0px 0px 30px;
+
     }
   
-    .section-title {
-      width: 80%;
-    }
-    
-    .trainer {
-      flex: 0 70%;
-    }
-    
-    .contact-info iframe{
-      flex: 1 100%;
-    }
+  
   }
   
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
@@ -275,61 +283,35 @@ height: auto;
     section {
       padding: 30px 15px;
     }
-  
-    .step h3 {
-      flex: 1 100%;
-      text-align: center;
-    }
-  
-    .step-info {
-      flex: 2 100%;
-      text-align: center;
-      justify-content: center;
-    }
-  
-    .step-img {
-      flex: 0 32%;
-      margin-right: 0;
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
-  
-    .step-text {
-      flex: 100%;  
-    }
-  
-    .trainer-bio h3, .trainer-bio h4 {
-      display: block;
-    }
   }
   
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
   @media screen and (max-width: 575px) {
-    .hero-form button {
-      width: 100%;
+    header h1 a{
+        flex: 1 30%;
+        font-size: 2vw;
     }
-  
-    .section-title {
-      width: 95%;
+
+    header nav {
+        flex: 2 70%;
+        display: block;
     }
-  
-    .intro p {
-      width: 100%;
+    section {
+        padding: 0px 0px 0px 0px;
+      }
+
+      .hero {
+          height: 60px;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 20px;
     }
-  
-    .trainer {
-      flex: 0 100%;
-    }
-  
-    .contact-info {
-      text-align: center;
-    }
-  
-    .contact-info > * {
-      flex: 0 100%;
-    }
-  
-    .contact-form {
-      order: 3;
-    }
+
+
+
+  footer {
+  flex-wrap: nowrap;
+  }
   }
